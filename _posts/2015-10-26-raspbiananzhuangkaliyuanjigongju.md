@@ -4,7 +4,7 @@ keywords: raspberry
 description: raspbian安装kali源
 title: "raspbian安装kali源及工具"
 categories: [linux,rasberry]
-tags: [rapberry,linux]
+tags: [raspberry,linux]
 group: archive
 icon: file-alt
 ---

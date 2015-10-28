@@ -32,7 +32,7 @@ icon: file-alt
 
 #####给予sudo权限:    
 
-    sudo vi /etc/soduers
+    sudo vi /etc/sudoers
 
 添加 
     

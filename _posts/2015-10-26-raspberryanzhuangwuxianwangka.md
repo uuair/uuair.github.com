@@ -4,7 +4,7 @@ keywords: raspberry
 description: 安装无线网卡
 title: "raspberry安装无线网卡"
 categories: [linux,rasberry]
-tags: [rapberry,linux]
+tags: [raspberry,linux]
 group: archive
 icon: file-alt
 ---

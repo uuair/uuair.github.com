@@ -4,7 +4,7 @@ keywords: raspberry
 description: 通过串口访问raspbian
 title: "raspberry通过串口访问"
 categories: [linux,rasberry]
-tags: [rapberry,linux]
+tags: [raspberry,linux]
 group: archive
 icon: file-alt
 ---

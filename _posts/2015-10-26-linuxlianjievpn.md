@@ -4,7 +4,7 @@ keywords: vpn,pptp,
 description: linux连接vpn
 title: "linux连接vpn(pptp)"
 categories: [linux,rasberry,network]
-tags: [rapberry,linux,vpn]
+tags: [raspberry,linux,vpn]
 group: archive
 icon: file-alt
 ---
