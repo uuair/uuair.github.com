@@ -1,3 +1,16 @@
+---
+layout: post
+keywords: Ubuntu
+description: ubuntu14的个人配置
+title: "Ubuntu设置"
+categories: [linux]
+tags: [linux,ubuntu]
+group: archive
+icon: file-alt
+---
+{% include site/setup %}
+
+
 ###Ubuntu14配置：  
 
 **新建用户**:  
