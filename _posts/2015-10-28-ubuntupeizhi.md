@@ -101,7 +101,7 @@ iptables-restore < /etc/iptables.rules
 
 `vi /etc/init.d/shadowsocks`  
 
-输入以下内容:  
+输入以下内容:    
 
 ```
 #!/bin/sh
@@ -114,22 +114,22 @@ stop(){
         ssserver -c /etc/shadowsocks.json -d stop
 }
 
-case "$1" in
-start)
-        start
-        ;;
-stop)
-        stop
-        ;;
-reload)
-        stop
-        start
-        ;;
-*)
-        echo "Usage: $0 {start|reload|stop}"
-        exit 1
-        ;;
-esac  
+case "$1" in  
+start)  
+        start   
+        ;;  
+stop)  
+        stop  
+        ;;  
+reload)  
+        stop  
+        start  
+        ;;  
+*)  
+        echo "Usage: $0 {start|reload|stop}"  
+        exit 1  
+        ;;  
+esac    
 ```
 
 给执行权限  
