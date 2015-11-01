@@ -11,7 +11,7 @@ icon: file-alt
 {% include site/setup %}
 
 
-###Ubuntu14配置：  
+###Ubuntu14配置： 
 
 **新建用户**:  
 
@@ -28,7 +28,7 @@ icon: file-alt
     
 **设置防火墙**    
 
-<font color="red">whereis iptables</font>  		#*查看系统是否安装了防火墙*
+<font color="red">whereis iptables</font>  		*#查看系统是否安装了防火墙*
   
     apt-get install iptables 		#如果没有安装  
     iptables -L 		#查看防火墙配置信息  
@@ -117,7 +117,6 @@ iptables-restore < /etc/iptables.rules
 输入以下内容:    
 
 ```
-
 #!/bin/sh
 
 start(){
