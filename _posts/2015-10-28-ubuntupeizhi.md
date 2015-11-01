@@ -114,7 +114,8 @@ iptables-restore < /etc/iptables.rules
 
 `vi /etc/init.d/shadowsocks`  
 
-输入以下内容:    
+输入以下内容:   
+   
 
 ```
 #!/bin/sh
