@@ -184,7 +184,6 @@ esac
     sudo vi /etc/nginx/sites-available/ghost.conf  
     
 ```
-
 server {
     listen 80;
     server_name example.com;
