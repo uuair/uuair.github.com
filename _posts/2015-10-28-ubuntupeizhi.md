@@ -117,34 +117,34 @@ iptables-restore < /etc/iptables.rules
 输入以下内容:   
    
 
-```  
-#!/bin/sh
+ 
+    #!/bin/sh
 
-start(){
+    start(){
        ssserver -c /etc/shadowsocks.json -d start
-}
+    }
 
-stop(){
+    stop(){
         ssserver -c /etc/shadowsocks.json -d stop
-}
+    }
 
-case "$1" in  
-start)  
+    case "$1" in  
+    start)  
         start   
         ;;  
-stop)  
+    stop)  
         stop  
         ;;  
-reload)  
+    reload)  
         stop  
         start  
         ;;  
-*)  
+    *)  
         echo "Usage: $0 {start|reload|stop}"  
         exit 1  
         ;;  
-esac    
-```
+    esac    
+
 
 给执行权限  
 `chmod +x /etc/init.d/shadowsocks`  
@@ -183,16 +183,15 @@ esac
 
     sudo vi /etc/nginx/sites-available/ghost.conf  
     
-```
-server {
-    listen 80;
-    server_name example.com;
+    server {
+        listen 80;
+        server_name example.com;
 
     location / {
         proxy_set_header   X-Real-IP $remote_addr;
         proxy_set_header   Host      $http_host;
         proxy_pass         http://127.0.0.1:2368;
-```  
+
 
 修改`server-name`为自己的域名  
 
