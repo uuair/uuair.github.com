@@ -39,13 +39,14 @@ tumx的前缀快捷键默认为`ctrl+b`，也就是说所有的快捷功能，�
 	
 	pip install --user powerline-status  
 	
-官方的powerline说明文档在[这里](http://powerline.readthedocs.io/en/latest/installation/osx.html)    
+官方的powerline说明文档在[这里](http://powerline.readthedocs.io/en/latest/installation/osx.html)   
+   
 
 ###tmux的基本操作  
 
 `Prefix-Command`前置操作：所有下面介绍的快捷键，都必须以前置操作开始。tmux默认的前置操作是`Ctrl+b`。例如，想新建一个窗体，就需要先在键盘上按下`Ctrl+b`，松开后再按下`n`键。  
 
-下面所有的`prefix`均代表`ctrl+b`  
+下面所有的`prefix`均代表`ctrl+b`    
 
 **Session相关操作**  
 
@@ -53,7 +54,7 @@ tumx的前缀快捷键默认为`ctrl+b`，也就是说所有的快捷功能，�
 -----------------| ------
 查看/切换session  | prefix s
 离开Session       | prefix d
-重命名当前Session  | prefix $  
+重命名当前Session  | prefix \$  
 
 **Windows相关操作**    
 
@@ -61,7 +62,7 @@ tumx的前缀快捷键默认为`ctrl+b`，也就是说所有的快捷功能，�
 -----------------| ------
 新建窗口          | prefix c
 切换到上一个活动的窗口 | prefix space
-关闭一个窗口       | prefix  &
+关闭一个窗口       | prefix  \&
 使用窗口号切换     | prefix 窗口号  
 
 **Pane相关操作**  
@@ -70,21 +71,22 @@ tumx的前缀快捷键默认为`ctrl+b`，也就是说所有的快捷功能，�
 -----------------| ------
 切换到下一个窗格    |  prefix o
 查看所有窗格的编号  |  prefix q
-垂直拆分出一个新的窗格 | prefix "
+垂直拆分出一个新的窗格 | prefix \"
 水平拆分出一个新窗格   | prefix %
-暂时把一个窗体放到最大  | prefix z  
+暂时把一个窗体放到最大  | prefix z    
+
 
 ###tmux的一些个性化定制  
 
 做一些美化和个性配置，可以使用[gpakosz的tmux配置](https://github.com/gpakosz/.tmux)。  
 
-``` 
-$ cd  
-$ rm -rf .tmux  
-$ git clone https://github.com/gpakosz/.tmux.git  
-$ ln -s .tmux/.tmux.conf  
-$ cp .tmux/.tmux.conf.local .    
-```  
+
+	$ cd  
+	$ rm -rf .tmux  
+	$ git clone https://github.com/gpakosz/.tmux.git  
+	$ ln -s .tmux/.tmux.conf  
+	$ cp .tmux/.tmux.conf.local .    
+  
 安装完成以后的效果：  
 
 ![img](http://cenalulu.github.io/images/linux/tmux/tmux_screenshot.png)
