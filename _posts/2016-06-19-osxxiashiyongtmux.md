@@ -50,30 +50,116 @@ tumx的前缀快捷键默认为`ctrl+b`，也就是说所有的快捷功能，�
 
 **Session相关操作**  
 
-操作              | 快捷键 
------------------| ------
-查看/切换session  | prefix s
-离开Session       | prefix d
-重命名当前Session  | prefix \$  
+**操作**
+<div class="level2">
 
-**Windows相关操作**    
-
-操作              | 快捷键 
------------------| ------
-新建窗口          | prefix c
-切换到上一个活动的窗口 | prefix space
-关闭一个窗口       | prefix  \&
-使用窗口号切换     | prefix 窗口号  
-
-**Pane相关操作**  
-
-操作              | 快捷键 
------------------| ------
-切换到下一个窗格    |  prefix o
-查看所有窗格的编号  |  prefix q
-垂直拆分出一个新的窗格 | prefix \"
-水平拆分出一个新窗格   | prefix %
-暂时把一个窗体放到最大  | prefix z    
+<p>
+类似各种平铺式窗口管理器，tmux使用键盘操作，常用快捷键包括：
+</p>
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0 centeralign" colspan="2">  Ctrl+b  </td><td class="col2">激活控制台；此时以下按键生效</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0" rowspan="9">系统操作</td><td class="col1 centeralign">  ?  </td><td class="col2">列出所有快捷键；按q返回</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 centeralign">  d  </td><td class="col1">脱离当前会话；这样可以暂时返回Shell界面，输入tmux attach能够重新进入之前的会话</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 centeralign">  D  </td><td class="col1">选择要脱离的会话；在同时开启了多个会话时使用</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 centeralign">  Ctrl+z  </td><td class="col1">挂起当前会话</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 centeralign">  r  </td><td class="col1">强制重绘未脱离的会话</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 centeralign">  s  </td><td class="col1">选择并切换会话；在同时开启了多个会话时使用</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 centeralign">  :  </td><td class="col1">进入命令行模式；此时可以输入支持的命令，例如kill-server可以关闭服务器</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 centeralign">  [  </td><td class="col1">进入复制模式；此时的操作与vi/emacs相同，按q/Esc退出</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 centeralign">  ~  </td><td class="col1">列出提示信息缓存；其中包含了之前tmux返回的各种提示信息</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0" rowspan="10">窗口操作</td><td class="col1 centeralign">  c  </td><td class="col2">创建新窗口</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 centeralign">  &amp;  </td><td class="col1">关闭当前窗口</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 centeralign">  数字键  </td><td class="col1">切换至指定窗口</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0 centeralign">  p  </td><td class="col1">切换至上一窗口</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 centeralign">  n  </td><td class="col1">切换至下一窗口</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0 centeralign">  l  </td><td class="col1">在前后两个窗口间互相切换</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0 centeralign">  w  </td><td class="col1">通过窗口列表切换窗口</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0 centeralign">  ,  </td><td class="col1">重命名当前窗口；这样便于识别</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0 centeralign">  .  </td><td class="col1">修改当前窗口编号；相当于窗口重新排序</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0 centeralign">  f  </td><td class="col1">在所有窗口中查找指定文本</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0" rowspan="14">面板操作</td><td class="col1 centeralign">  “  </td><td class="col2">将当前面板平分为上下两块</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0 centeralign">  %  </td><td class="col1">将当前面板平分为左右两块</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0 centeralign">  x  </td><td class="col1">关闭当前面板</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0 centeralign">  !  </td><td class="col1">将当前面板置于新窗口；即新建一个窗口，其中仅包含当前面板</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0 centeralign">  Ctrl+方向键  </td><td class="col1">以1个单元格为单位移动边缘以调整当前面板大小</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0 centeralign">  Alt+方向键  </td><td class="col1">以5个单元格为单位移动边缘以调整当前面板大小</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0 centeralign">  Space  </td><td class="col1">在预置的面板布局中循环切换；依次包括even-horizontal、even-vertical、main-horizontal、main-vertical、tiled</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0 centeralign">  q  </td><td class="col1">显示面板编号</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0 centeralign">  o  </td><td class="col1">在当前窗口中选择下一面板</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0 centeralign">  方向键  </td><td class="col1">移动光标以选择面板</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0 centeralign">  {  </td><td class="col1">向前置换当前面板</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0 centeralign">  }  </td><td class="col1">向后置换当前面板</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0 centeralign">  Alt+o  </td><td class="col1">逆时针旋转当前窗口的面板</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0 centeralign">  Ctrl+o  </td><td class="col1">顺时针旋转当前窗口的面板</td>
+	</tr>
+</table></div>
 
 
 ###tmux的一些个性化定制  
