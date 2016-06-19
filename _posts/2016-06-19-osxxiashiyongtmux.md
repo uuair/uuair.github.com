@@ -89,8 +89,23 @@ tumx的前缀快捷键默认为`ctrl+b`，也就是说所有的快捷功能，�
   
 安装完成以后的效果：  
 
-<img scr="http://cenalulu.github.io/images/linux/tmux/tmux_screenshot.png" width="400" height="400" />
+<img src="http://cenalulu.github.io/images/linux/tmux/tmux_screenshot.png" width="400" height="400" />  
 
+关于这个配置文件改变的东西：  
+
+```shell
+	bind -r h select-pane -L  # move left
+	bind -r j select-pane -D  # move down
+	bind -r k select-pane -U  # move up
+	bind -r l select-pane -R  # move right
+	//窗口的左下上右绑定为hjkl  
+	
+	bind -r H resize-pane -L 2
+	bind -r J resize-pane -D 2
+	bind -r K resize-pane -U 2
+	bind -r L resize-pane -R 2
+	//窗口的移动左下上右绑定为大写的HJKL
+```
 ###为Bash配置powerline  
 
 通过`pip show powerline-status`命令，获得powerline的安装位置，比如我的：`/Users/root/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh`    
@@ -122,6 +137,25 @@ tumx的前缀快捷键默认为`ctrl+b`，也就是说所有的快捷功能，�
 	
 安装完成后可以在Terminal中的字体选项看到安装的字体了`xxx for powerline`  
 
+###tmux基本配置  
+
+**tmux动态载入配置**  
+
+编辑根目录的 .tmux.conf文件，添加：  
+
+	bind r source-file ~/.tmux.conf \; display-message "Config reloaded"  
+	//绑定prefix r为刷新tmux配置  
+	
+**鼠标切换窗格**  
+
+```
+setw -g mode-mouse on
+set -g mouse-select-pane on
+set -g mouse-resize-pane on
+set -g mouse-select-window on
+```
+
+	
 
 	 
 
