@@ -89,6 +89,28 @@ $ cp .tmux/.tmux.conf.local .
 
 ![img](http://cenalulu.github.io/images/linux/tmux/tmux_screenshot.png)
 
+###为Bash配置powerline  
+
+通过`pip show powerline-status`命令，获得powerline的安装位置，比如我的：`/Users/root/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh`    
+
+将以下配置保存到~/.bash_profile中：  
+
+	if [ -d "$HOME/Library/Python/2.7/bin" ]; then
+    PATH="$HOME/Library/Python/2.7/bin:$PATH"
+	fi  
+	export PATH="$HOME/.local/bin:$PATH"
+	export POWERLINE_COMMAND=powerline
+	export POWERLINE_CONFIG_COMMAND=powerline-config
+	powerline-daemon -q
+	POWERLINE_BASH_CONTINUATION=1
+	POWERLINE_BASH_SELECT=1
+	. /Users/root/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh 
+
+
+以上配置我参考了很多网上的答案，因为我的机器默认情况下由于path问题无法正常运行，加上上面的配置就ok了，特此记录下来。  
+
+
+
  
 
 
