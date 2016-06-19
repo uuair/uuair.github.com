@@ -26,7 +26,7 @@ tmux的三个元素分别为:
 * Window 单个可见窗口。Windows有自己的编号，也可以认为和ITerm2中的Tab类似。  
 * Pane 窗格，被划分成小块的窗口，类似于Vim中 C-w +v 后的效果。  
 
-![img](http://cenalulu.github.io/images/linux/tmux/concept.jpg)
+<img src="http://cenalulu.github.io/images/linux/tmux/concept.jpg" width="400" height="400"/>
 
 tumx的前缀快捷键默认为`ctrl+b`，也就是说所有的快捷功能，都需要先按下`ctrl+b`，然后再按相应的键，好像翻译过来叫前置快捷键吧，英文是`<prefix>`。  
 
@@ -89,7 +89,7 @@ tumx的前缀快捷键默认为`ctrl+b`，也就是说所有的快捷功能，�
   
 安装完成以后的效果：  
 
-![img](http://cenalulu.github.io/images/linux/tmux/tmux_screenshot.png)
+<img scr="http://cenalulu.github.io/images/linux/tmux/tmux_screenshot.png" width="400" height="400" />
 
 ###为Bash配置powerline  
 
@@ -108,8 +108,23 @@ tumx的前缀快捷键默认为`ctrl+b`，也就是说所有的快捷功能，�
 	POWERLINE_BASH_SELECT=1
 	. /Users/root/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh 
 
+为Mac OS X的ls弄上颜色，最简单的办法是在`~/.bash_profile`中添加一行代码：`export CLICOLOR=1`  
 
-以上配置我参考了很多网上的答案，因为我的机器默认情况下由于path问题无法正常运行，加上上面的配置就ok了，特此记录下来。  
+以上配置我参考了很多网上的答案，因为我的机器默认情况下由于path问题无法正常运行，加上上面的配置就ok了，特此记录下来。   
+
+*Teriminal字体配置*  
+
+配置好以后在bash中中文会出现错误的符号，这时候需要安装字体：  
+
+	git clone https://github.com/powerline/fonts.git  
+	cd fonts  
+	./install.sh  
+	
+安装完成后可以在Terminal中的字体选项看到安装的字体了`xxx for powerline`  
+
+
+	 
+
 
 
 
