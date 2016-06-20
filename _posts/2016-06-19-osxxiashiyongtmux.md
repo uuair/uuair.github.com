@@ -48,11 +48,11 @@ tumx的前缀快捷键默认为`ctrl+b`，也就是说所有的快捷功能，�
 
 下面所有的`prefix`均代表`ctrl+b`    
 
-**Session相关操作**  
+####Session相关操作 
 
 **操作**
 <div class="level2">
-
+<table>
 <p>
 类似各种平铺式窗口管理器，tmux使用键盘操作，常用快捷键包括：
 </p>
