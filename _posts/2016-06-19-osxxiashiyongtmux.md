@@ -159,7 +159,7 @@ tumx的前缀快捷键默认为`ctrl+b`，也就是说所有的快捷功能，�
 	<tr class="row33">
 		<td class="col0 centeralign">  Ctrl+o  </td><td class="col1">顺时针旋转当前窗口的面板</td>
 	</tr>
-	
+</table></div>	
 
 
 ###tmux的一些个性化定制  
