@@ -2,7 +2,7 @@
 layout: post
 keywords: tmux+powerline
 description: osx10.11下使用tmux+powerline
-title: "osx下使用tmux+powerline（一）"
+title: "osx下使用tmux+powerline"
 categories: [linux]
 tags: [linux,mac]
 group: archive
@@ -52,219 +52,42 @@ tumx的前缀快捷键默认为`ctrl+b`，也就是说所有的快捷功能，�
 
 **操作**
 
- <table border=0 cellpadding=0 cellspacing=0 width=1201 style='border-collapse:
- collapse;table-layout:fixed;width:901pt'>
- <col width=100 span=2 style='width:75pt'>
- <col width=801 style='mso-width-source:userset;mso-width-alt:21979;width:601pt'>
- <col width=100 span=2 style='width:75pt'>
- <tr height=24 style='height:18.0pt'>
-  <td colspan=2 height=24 class=xl66 width=200 style='height:18.0pt;width:150pt'>Ctrl+b</td>
-  <td class=xl67 width=801 style='border-left:none;width:601pt'>激活控制台：此时以下按键生效</td>
-  <td class=xl65 width=100 style='width:75pt'></td>
-  <td class=xl65 width=100 style='width:75pt'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td rowspan=9 height=216 class=xl68 style='height:162.0pt;border-top:none'>系统操作</td>
-  <td class=xl69 style='border-top:none;border-left:none'>?</td>
-  <td class=xl69 style='border-top:none;border-left:none'>列出所有快捷键：按q返回</td>
-  <td></td>
-  <td></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>d</td>
-  <td class=xl69 style='border-top:none;border-left:none'>脱离当前会话：这样可以暂时返回Shell界面,输入tmux
-  attach能够重新进入之前的会话</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>D</td>
-  <td class=xl69 style='border-top:none;border-left:none'>选择要脱离的会话；在同时开启了多个会话时使用</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>Ctrl+z</td>
-  <td class=xl69 style='border-top:none;border-left:none'>挂起当前会话</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>r</td>
-  <td class=xl69 style='border-top:none;border-left:none'>强制重绘未脱离的会话</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>s</td>
-  <td class=xl69 style='border-top:none;border-left:none'>选择并切换会话；在同时开启了多个会话时使用</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>:</td>
-  <td class=xl69 style='border-top:none;border-left:none'>进入命令行模式；此时可以输入支持的命令，例如kill-server可以关闭服务器</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>[</td>
-  <td class=xl69 style='border-top:none;border-left:none'>进入复制模式；此时的操作与vi/emacs相同，按q/Esc退出</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>~</td>
-  <td class=xl69 style='border-top:none;border-left:none'>列出提示信息缓存；其中包含了之前tmux返回的各种提示信息</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td rowspan=10 height=240 class=xl70 style='height:180.0pt;border-top:none'>窗口操作</td>
-  <td class=xl69 style='border-top:none;border-left:none'>c</td>
-  <td class=xl69 style='border-top:none;border-left:none'>创建新窗口</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>&amp;</td>
-  <td class=xl69 style='border-top:none;border-left:none'>关闭当前窗口</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>数字键</td>
-  <td class=xl69 style='border-top:none;border-left:none'>切换至指定窗口</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>p</td>
-  <td class=xl69 style='border-top:none;border-left:none'>切换至上一窗口</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>n</td>
-  <td class=xl69 style='border-top:none;border-left:none'>切换至下一窗口</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>l</td>
-  <td class=xl69 style='border-top:none;border-left:none'>在前后两个窗口间互相切换</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>w</td>
-  <td class=xl69 style='border-top:none;border-left:none'>通过窗口列表切换窗口</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>,</td>
-  <td class=xl69 style='border-top:none;border-left:none'>重命名当前窗口；这样便于辨识</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>.</td>
-  <td class=xl69 style='border-top:none;border-left:none'>修改当前窗口编号；相当于窗口重新排序</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl72 style='height:18.0pt;border-top:none;border-left:
-  none'>f</td>
-  <td class=xl72 style='border-top:none;border-left:none'>在所有窗口中查找指定文本</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td rowspan=14 height=336 class=xl68 style='height:252.0pt'>面板操作</td>
-  <td class=xl69 style='border-left:none'>&quot;</td>
-  <td class=xl69 style='border-left:none'>将当前面板平分为上下两块</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>%</td>
-  <td class=xl69 style='border-top:none;border-left:none'>将当前面板平分为左右两块</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>x</td>
-  <td class=xl69 style='border-top:none;border-left:none'>关闭当前面板</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>!</td>
-  <td class=xl69 style='border-top:none;border-left:none'>将当前面板置于新窗口；即新建一个窗口，其中仅包含当前面板</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>Ctrl+方向键</td>
-  <td class=xl69 style='border-top:none;border-left:none'>以1个单元格为单位移动边缘以调整当前面板大小</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>Alt+方向键</td>
-  <td class=xl69 style='border-top:none;border-left:none'>以5个单元格为单位移动边缘以调整当前面板大小</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>Space</td>
-  <td class=xl69 style='border-top:none;border-left:none'>在预置的面板布局中循环切换；依次包括even-horizontal、even-vertical、main-horizontal、main-vertic<span
-  style='display:none'>al、tiled</span></td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>q</td>
-  <td class=xl69 style='border-top:none;border-left:none'>显示面板编号</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>o</td>
-  <td class=xl69 style='border-top:none;border-left:none'>在当前窗口中选择下一面板</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>方向键</td>
-  <td class=xl69 style='border-top:none;border-left:none'>移动光标以选择面板</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>{</td>
-  <td class=xl69 style='border-top:none;border-left:none'>向前置换当前面板</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>}</td>
-  <td class=xl69 style='border-top:none;border-left:none'>向后置换当前面板</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>Alt+o</td>
-  <td class=xl69 style='border-top:none;border-left:none'>逆时针旋转当前窗口的面板</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=24 style='height:18.0pt'>
-  <td height=24 class=xl69 style='height:18.0pt;border-top:none;border-left:
-  none'>Ctrl+o</td>
-  <td class=xl69 style='border-top:none;border-left:none'>顺时针旋转当前窗口的面板</td>
-  <td colspan=2 style='mso-ignore:colspan'></td>
- </tr>
-</table>  
+Ctrl+b | 激活控制台：此时以下按键生效
+---| ----
+?  | 列出所有快捷键：按q返回
+d  | 脱离当前会话：这样可以暂时返回Shell界面,输入tmux attach能够重新进入之前的会话
+D  | 选择要脱离的会话；在同时开启了多个会话时使用
+Ctrl+z | 挂起当前会话
+r  | 强制重绘未脱离的会话
+s  | 选择并切换会话；在同时开启了多个会话时使用
+:  | 进入命令行模式；此时可以输入支持的命令，例如kill-server可以关闭服务器
+[  | 进入复制模式；此时的操作与vi/emacs相同，按q/Esc退出
+~  | 列出提示信息缓存；其中包含了之前tmux返回的各种提示信息
+c  | 创建新窗口
+&  | 关闭当前窗口
+数字键 | 切换至指定窗口
+p  | 切换至上一窗口
+n  | 切换至下一窗口
+l  | 在前后两个窗口间互相切换
+w  | 通过窗口列表切换窗口
+,  | 重命名当前窗口；这样便于辨识
+.  | 修改当前窗口编号；相当于窗口重新排序
+f  | 在所有窗口中查找指定文本
+"  | 将当前面板平分为上下两块
+%  | 将当前面板平分为左右两块
+x  | 关闭当前面板
+!  | 将当前面板置于新窗口；即新建一个窗口，其中仅包含当前面板
+Ctrl+方向键 | 以1个单元格为单位移动边缘以调整当前面板大小
+Alt+方向键  | 以5个单元格为单位移动边缘以调整当前面板大小
+Space  | 在预置的面板布局中循环切换；依次包括even-horizontal、even-vertical、main-horizontal、main-vertical、tiled
+q  | 显示面板编号
+o  | 在当前窗口中选择下一面板
+方向键  | 移动光标以选择面板
+{  | 向前置换当前面板
+}  | 向后置换当前面板
+Alt+o  | 逆时针旋转当前窗口的面板
+Ctrl+o  | 顺时针旋转当前窗口的面板  
+
 
 ###tmux的一些个性化定制  
 
