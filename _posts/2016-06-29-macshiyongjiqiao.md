@@ -90,7 +90,10 @@ optiion+F11打开声音设置，option+F1打开显示设置等等等...
 Mac下面观看图片的时候，不能像win下面一样选择下一张图片的时候，先`command+A`选择全部的图片，再按enter键就可以一张一张观看了。  
 按住Finder对话框顶部或者是Finder里任意的文件夹图标，拖动到Terminal终端命令行窗口，可以直接粘贴目录路径。  
 Terminal终端命令行窗口输入 `open .`，用Finder打开当前目录。  
-在终端里输入`syslog | grep -i "Wake reason"`  查看休眠时做了什么。  
+在终端里输入`syslog | grep -i "Wake reason"`  查看休眠时做了什么。    
+查看多个文件占用的容量 `ctrl + command + i`。  
+把多个文件归类到一个文件夹中：选中你想要的文件 按`control＋command＋n`  
+
 
 
 
