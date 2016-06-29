@@ -27,9 +27,9 @@ ping某个主机： `ping -o www.baidu.com`
 管理windows网络: `man net`  
 诊断域名： `dig www.baidu.com a dig www.baidu.com MX`  
 查看谁正在登录到Mac机器上: `w`  
-显示系统路由表： ` netstat -r`  
-显示活动网络连接： ` netstat -s `  
-显示网络统计： `netstat -s `  
+显示系统路由表： `netstat -r`  
+显示活动网络连接： `netstat -s `  
+显示网络统计： `netstat -s` 
 
 统计剪切板中文本的行数： `pbpaste |wc -l`  
 统计剪切板中的单词数： `pbpaste | wc -w`  
