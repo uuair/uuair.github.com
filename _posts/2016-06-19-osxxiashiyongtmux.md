@@ -10,7 +10,8 @@ icon: file-alt
 ---
 {% include site/setup %}
 
-##Tmux的安装配置：  
+Tmux的安装配置：
+===  
 
 **osx下安装**:  
 
@@ -42,13 +43,15 @@ tumx的前缀快捷键默认为`ctrl+b`，也就是说所有的快捷功能，�
 官方的powerline说明文档在[这里](http://powerline.readthedocs.io/en/latest/installation/osx.html)   
    
 
-###tmux的基本操作  
+tmux的基本操作
+===  
 
 `Prefix-Command`前置操作：所有下面介绍的快捷键，都必须以前置操作开始。tmux默认的前置操作是`Ctrl+b`。例如，想新建一个窗体，就需要先在键盘上按下`Ctrl+b`，松开后再按下`n`键。  
 
 下面所有的`prefix`均代表`ctrl+b`    
 
-####Session相关操作 
+Session相关操作 
+===
 
 **操作**
 
@@ -89,7 +92,8 @@ Alt+o  | 逆时针旋转当前窗口的面板
 Ctrl+o  | 顺时针旋转当前窗口的面板  
 
 
-###tmux的一些个性化定制  
+tmux的一些个性化定制 
+=== 
 
 做一些美化和个性配置，可以使用[gpakosz的tmux配置](https://github.com/gpakosz/.tmux)。  
 
@@ -120,7 +124,8 @@ Ctrl+o  | 顺时针旋转当前窗口的面板
 	bind -r L resize-pane -R 2
 	//窗口的移动左下上右绑定为大写的HJKL
 ```
-###为Bash配置powerline  
+为Bash配置powerline
+===  
 
 通过`pip show powerline-status`命令，获得powerline的安装位置，比如我的：`/Users/root/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh`    
 
@@ -173,7 +178,8 @@ set -g mouse-resize-pane on
 set -g mouse-select-window on
 ```
 
-###常用
+常用
+===
 
 tmux     | 开启tmux
 -------- | -------
@@ -184,7 +190,8 @@ tmux -r   | 连接上次断开的session
 tmux kill-session | 关闭上次tmux打开的窗口
 tmux kill-server  | 关闭所有tmux打开的窗口  
 
-###tmux常用配置说明：  
+tmux常用配置说明：
+===  
 
 vi .tmux.conf  
 
