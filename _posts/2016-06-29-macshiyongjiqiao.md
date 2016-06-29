@@ -10,7 +10,8 @@ icon: file-alt
 ---
 {% include site/setup %}
 
-###Mac终端命令  
+Mac终端命令
+===  
 
 重启Macos: `shutdown -r now`  
 关闭MacOS:  `shutdown now`  
@@ -42,7 +43,8 @@ ping某个主机： `ping -o www.baidu.com`
 Nano是一个比vim弱的文本编辑器，但是很方便，其中ctrl+o来保存，ctrl+x为退出。  
 清除终端显示内容： `clear`  
 
-###Mac使用技巧  
+Mac使用技巧
+===  
 
 `control＋command＋space` 可以输入emoji，图片字符，特殊符号（使用率较高）  
 输入不认识的字的各个部分，然后按`shift＋空格`  
