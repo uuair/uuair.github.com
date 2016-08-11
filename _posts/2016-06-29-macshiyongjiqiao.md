@@ -101,7 +101,8 @@ Mac brew软件
 
 `brew install screenfetch`    
 
-![屏幕快照 2016-08-12 00.28.52](media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-08-12%2000.28.52.png)
+![1](media/1.png)
+
 
 `brew install screen`    
 
