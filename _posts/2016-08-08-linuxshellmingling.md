@@ -10,7 +10,7 @@ icon: file-alt
 ---
 {% include site/setup %}
 
-##一些简单的命令  
+### 一些简单的命令  
  
 ```
 [me@linuxbox ~]$ date
@@ -36,7 +36,7 @@ Filesystem           1K-blocks      Used Available Use% Mounted on
 tmpfs                   256856         0   256856    0% /dev/shm
 ```  
 
-###文件系统  
+### 文件系统  
 
 * pwd - 列出当前工作目录名  
 * cd - 更改目录  
