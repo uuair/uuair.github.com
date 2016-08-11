@@ -101,8 +101,7 @@ Mac brew软件
 
 `brew install screenfetch`    
 
-![1](media/1.png)
-
+![1](http://uuair.qiniudn.com/1.png)
 
 `brew install screen`    
 
