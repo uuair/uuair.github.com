@@ -160,7 +160,7 @@ tmux的一些个性化定制
 	
 安装完成后可以在Terminal中的字体选项看到安装的字体了`xxx for powerline`  
 
-###tmux基本配置  
+### tmux基本配置  
 
 **tmux动态载入配置**  
 
