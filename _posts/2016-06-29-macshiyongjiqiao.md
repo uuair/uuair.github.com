@@ -96,6 +96,19 @@ Terminal终端命令行窗口输入 `open .`，用Finder打开当前目录。
 查看多个文件占用的容量 `ctrl + command + i`。  
 把多个文件归类到一个文件夹中：选中你想要的文件 按`control＋command＋n`  
 
+Mac brew软件  
+===
+
+`brew install screenfetch`    
+
+![屏幕快照 2016-08-12 00.28.52](media/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-08-12%2000.28.52.png)
+
+`brew install screen`    
+
+可以断线保持连接的ssh工具  
+
+`brew install tmux`    
+一样可以断线保持连接，相比较screen，tmux可以支持横屏纵屏划分shell屏幕
 
 
 
