@@ -110,6 +110,19 @@ Mac brew软件
 `brew install tmux`    
 一样可以断线保持连接，相比较screen，tmux可以支持横屏纵屏划分shell屏幕
 
+`hdiutil convert -format UDRW -o xxx xxx.iso`  
+转换iso文件为img  
+
+命令行更新软件  
+`softwareupdate -i -a`  
+
+或者安装小工具  
+```  
+brew install mas  
+mas list  
+mas help  
+```
+
 
 
    
